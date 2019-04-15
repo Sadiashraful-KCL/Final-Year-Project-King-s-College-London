@@ -38,19 +38,19 @@ class FoodClassifierViewController: UIViewController {
             if classifications.isEmpty {
                 self.classificationLabel.text = "Nothing recognised."
             } else {
-                let topClassifications = classifications.prefix(2)
+                let topClassifications = classifications.prefix(3)
                 let descriptions = topClassifications.map { classification in
-                    return String(format: "%.2f", classification.confidence * 100) + "% - " + classification.identifier
+                    return classification.identifier + " - " + String(format: "%.2f", classification.confidence * 100) + "%"
                 }
                 
-                self.classificationLabel.text = "Classifications:\n" + descriptions.joined(separator: "\n")
+                self.classificationLabel.text = "I think the fast food is:\n" + descriptions.joined(separator: "\n")
             }
         }
         
     }
     
     func updateClassifications(for image: UIImage){
-        classificationLabel.text = "Classifying..."
+        classificationLabel.text = "Performing Inference..."
         
         guard let orientation = CGImagePropertyOrientation(rawValue: UInt32(image.imageOrientation.rawValue)),
             let ciImage = CIImage(image: image) else {
@@ -80,11 +80,11 @@ class FoodClassifierViewController: UIViewController {
         }
         
         let photoSourcePicker = UIAlertController()
-        let takePhotoAction = UIAlertAction(title: "Take Photo", style: .default) { _ in
+        let takePhotoAction = UIAlertAction(title: "Snap and Classify", style: .default) { _ in
             self.presentPhotoPicker(sourceType: .camera)
         }
         
-        let choosenPhotoAction = UIAlertAction(title: "Choose Photo", style: .default) { _ in
+        let choosenPhotoAction = UIAlertAction(title: "Perform classification from library album", style: .default) { _ in
             self.presentPhotoPicker(sourceType: .photoLibrary)
         }
         

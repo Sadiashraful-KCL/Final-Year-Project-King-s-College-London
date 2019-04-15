@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		000999212E9D25531FA942CA /* Pods_CalorieTracker_aiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF957A4527C0FF89791E68F4 /* Pods_CalorieTracker_aiTests.framework */; };
+		1A9AD1F12264FF5400B64E8D /* CornerRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9AD1F02264FF5400B64E8D /* CornerRoundedView.swift */; };
 		1A9BE82721ACA59100486CE6 /* AppTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BE82621ACA59100486CE6 /* AppTutorialViewController.swift */; };
 		1A9BE82821ACA59100486CE6 /* AppTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BE82621ACA59100486CE6 /* AppTutorialViewController.swift */; };
 		1A9BE82921ACA59100486CE6 /* AppTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BE82621ACA59100486CE6 /* AppTutorialViewController.swift */; };
@@ -22,7 +23,6 @@
 		1A9CD7F621919BE100FB8ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9CD7F421919BE100FB8ADA /* LaunchScreen.storyboard */; };
 		1A9CD80121919BE100FB8ADA /* CalorieTracker_aiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CD80021919BE100FB8ADA /* CalorieTracker_aiTests.swift */; };
 		1A9CD80C21919BE100FB8ADA /* CalorieTracker_aiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CD80B21919BE100FB8ADA /* CalorieTracker_aiUITests.swift */; };
-		1A9CD81A21919E7B00FB8ADA /* RoundedVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9CD81921919E7B00FB8ADA /* RoundedVisualEffectView.swift */; };
 		1AC6384F224A3DCB0034042C /* KFCFinalModel2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6384E224A3DCB0034042C /* KFCFinalModel2.mlmodel */; };
 		42049BBF8746BB849292DF89 /* Pods_CalorieTracker_aiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAD3AA1DF1E047627C5F9A8 /* Pods_CalorieTracker_aiUITests.framework */; };
 		6A5A8C541FA18F8B3BC1BFE2 /* Pods_CalorieTracker_ai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB2147359BA5D254F30F6F9 /* Pods_CalorieTracker_ai.framework */; };
@@ -59,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A9AD1F02264FF5400B64E8D /* CornerRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundedView.swift; sourceTree = "<group>"; };
 		1A9BE82621ACA59100486CE6 /* AppTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTutorialViewController.swift; sourceTree = "<group>"; };
 		1A9BE82A21ACAB4300486CE6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1A9CD7E521919BE000FB8ADA /* CalorieTracker.ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieTracker.ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +76,6 @@
 		1A9CD80721919BE100FB8ADA /* CalorieTracker.aiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorieTracker.aiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9CD80B21919BE100FB8ADA /* CalorieTracker_aiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieTracker_aiUITests.swift; sourceTree = "<group>"; };
 		1A9CD80D21919BE100FB8ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A9CD81921919E7B00FB8ADA /* RoundedVisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedVisualEffectView.swift; sourceTree = "<group>"; };
 		1AC6384E224A3DCB0034042C /* KFCFinalModel2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KFCFinalModel2.mlmodel; sourceTree = "<group>"; };
 		23A43AFBDA77E82CD50FD040 /* Pods-CalorieTracker.ai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.ai.release.xcconfig"; path = "Target Support Files/Pods-CalorieTracker.ai/Pods-CalorieTracker.ai.release.xcconfig"; sourceTree = "<group>"; };
 		2CAD3AA1DF1E047627C5F9A8 /* Pods_CalorieTracker_aiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieTracker_aiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,8 +184,8 @@
 		1A9CD81C2191A02500FB8ADA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A9CD81921919E7B00FB8ADA /* RoundedVisualEffectView.swift */,
 				1A9BE82A21ACAB4300486CE6 /* OnboardingView.swift */,
+				1A9AD1F02264FF5400B64E8D /* CornerRoundedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -445,8 +445,8 @@
 			files = (
 				1A9BE82721ACA59100486CE6 /* AppTutorialViewController.swift in Sources */,
 				1A9CD7EB21919BE000FB8ADA /* FoodClassifierViewController.swift in Sources */,
-				1A9CD81A21919E7B00FB8ADA /* RoundedVisualEffectView.swift in Sources */,
 				1A9CD7F121919BE000FB8ADA /* CalorieTracker_ai.xcdatamodeld in Sources */,
+				1A9AD1F12264FF5400B64E8D /* CornerRoundedView.swift in Sources */,
 				1A9CD7E921919BE000FB8ADA /* AppDelegate.swift in Sources */,
 				1A9BE82B21ACAB4300486CE6 /* OnboardingView.swift in Sources */,
 				1AC6384F224A3DCB0034042C /* KFCFinalModel2.mlmodel in Sources */,

@@ -8,12 +8,15 @@
 
 import UIKit
 
-class RoundedVisualEffectView: UIVisualEffectView {
+class CornerRoundedView: UIVisualEffectView {
 
     override func awakeFromNib() {
-        self.layer.cornerRadius = 10
-        self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner]
-        self.clipsToBounds = false
+        self.layer.cornerRadius = 12
+        self.layer.maskedCorners = [.layerMinXMinYCorner,
+                                  .layerMinXMaxYCorner,
+                                  .layerMaxXMinYCorner,
+                                  .layerMaxXMaxYCorner]
+        self.clipsToBounds = true
     }
 
 }
